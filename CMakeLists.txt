@@ -24,6 +24,7 @@ deepstd_option(BUILD_python "Build Python wrapper" ON)
 
 # ---[ Dependencies
 include(cmake/Dependencies.cmake)
+include(cmake/Summary.cmake)
 
 # ---[ Flags
 if(UNIX OR APPLE)
@@ -43,4 +44,8 @@ include_directories(${DEEPSTD_INCLUDE_DIR} ${PROJECT_BINARY_DIR})
 
 # ---[ Subdirectories
 add_subdirectory(features/mser)
+
+# ---[ Configuration summary
+deepstd_print_configuration_summary()
+
 

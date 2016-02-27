@@ -17,3 +17,11 @@ if(UNIX OR APPLE)
                        COMMENT "Creating symlink ${__linkname} -> ${PROJECT_BINARY_DIR}/lib/_mser.so")
 endif()
 
+# ---[ Build mser test file
+#find_package(JPEG REQUIRED)
+#if(JPEG_FOUND)
+#  include_directories(${JPEG_INCLUDE_DIR})
+#  target_link_libraries(test ${JPEG_LIBRARIES})
+#endif()
+#add_executable(test mser.cpp test.cpp)
+

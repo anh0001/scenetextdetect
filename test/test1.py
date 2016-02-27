@@ -1,3 +1,7 @@
+import sys
+caffe_root = '/home/anhar/software/caffe/'
+sys.path.append(caffe_root + 'python')
+
 import matplotlib.pyplot as plt
 import numpy as np
 import caffe

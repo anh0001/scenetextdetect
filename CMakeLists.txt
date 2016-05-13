@@ -49,6 +49,6 @@ add_subdirectory(features/mser)
 deepstd_print_configuration_summary()
 
 # add this
-deepstd_print_configuration_summary()
+test123
 
 
